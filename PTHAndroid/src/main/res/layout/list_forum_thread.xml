@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:paddingBottom="4dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="4dp">
+
+    <RelativeLayout
+        android:id="@+id/thread_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/thread_icons">
+
+        <TextView
+            android:id="@+id/thread_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/primary_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/author_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/thread_name"
+            android:text="@string/author"
+            android:textColor="@color/secondary_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/author_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/author_name_text"
+            android:layout_toRightOf="@id/author_name_text"
+            android:paddingLeft="4dp"
+            android:textColor="@color/secondary_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/replies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/author_name_text"
+            android:textColor="@color/secondary_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/last_post_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/replies"
+            android:text="@string/last_post_by"
+            android:textColor="@color/secondary_text"
+            android:textSize="16sp" />
+
+        <!-- TODO: clickable to jump to profile? -->
+        <TextView
+            android:id="@+id/last_post_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/last_post_text"
+            android:layout_toRightOf="@id/last_post_text"
+            android:paddingLeft="4dp"
+            android:textColor="@color/secondary_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/last_post_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/last_post_text"
+            android:textColor="@color/secondary_text"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/thread_icons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/sticky_thread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/sticky_thread"
+            android:tint="@color/accent"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/locked_thread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/locked_thread"
+            android:tint="@color/accent"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/go_to_last_read"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/go_to_last_read"
+            android:tint="@color/accent" />
+
+    </LinearLayout>
+</RelativeLayout>

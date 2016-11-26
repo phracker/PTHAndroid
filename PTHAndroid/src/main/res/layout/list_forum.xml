@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="4dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="4dp">
+
+    <TextView
+        android:id="@+id/forum_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary_text"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/topics_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/topics"
+        android:textColor="@color/secondary_text" />
+
+    <TextView
+        android:id="@+id/topics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/topics_text"
+        android:paddingRight="4dp"
+        android:textColor="@color/secondary_text" />
+
+    <TextView
+        android:id="@+id/posts_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/topics_text"
+        android:layout_alignStart="@id/topics_text"
+        android:layout_below="@id/topics_text"
+        android:text="@string/posts"
+        android:textColor="@color/secondary_text" />
+
+    <TextView
+        android:id="@+id/posts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/posts_text"
+        android:layout_toLeftOf="@id/posts_text"
+        android:paddingRight="4dp"
+        android:textColor="@color/secondary_text" />
+
+    <TextView
+        android:id="@+id/last_post_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forum_name"
+        android:text="@string/last_post"
+        android:textColor="@color/secondary_text" />
+
+    <!-- TODO: clickable to jump to last thread? -->
+    <TextView
+        android:id="@+id/last_post_thread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/last_post_text"
+        android:textColor="@color/primary_text"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/last_post_by_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/last_post_thread"
+        android:text="@string/by"
+        android:textColor="@color/secondary_text" />
+
+    <!-- TODO: clickable to jump to profile? -->
+    <TextView
+        android:id="@+id/last_post_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/last_post_by_text"
+        android:layout_toRightOf="@id/last_post_by_text"
+        android:paddingLeft="4dp"
+        android:textColor="@color/secondary_text" />
+
+    <TextView
+        android:id="@+id/last_post_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/last_post_by_text"
+        android:layout_toRightOf="@id/last_post_username"
+        android:paddingLeft="4dp"
+        android:textColor="@color/secondary_text" />
+</RelativeLayout>

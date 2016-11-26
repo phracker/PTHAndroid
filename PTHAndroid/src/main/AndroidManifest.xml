@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="me.passtheheadphones"
+          android:versionName="2.1.7.b">
+
+<uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name="me.passtheheadphones.PTHApplication">
+        <activity
+            android:name="me.passtheheadphones.login.LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="me.passtheheadphones.announcements.AnnouncementsActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="me.passtheheadphones.profile.ProfileActivity"
+            android:label="@string/profile">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:scheme="http"
+                    android:host="what.cd"
+                    android:pathPrefix="/user"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:scheme="https"
+                    android:host="what.cd"
+                    android:pathPrefix="/user"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:scheme="https"
+                    android:host="ssl.what.cd"
+                    android:pathPrefix="/user"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="me.passtheheadphones.artist.ArtistActivity"
+            android:label="@string/artist">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:scheme="http"
+                    android:host="what.cd"
+                    android:pathPrefix="/artist"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:scheme="https"
+                    android:host="what.cd"
+                    android:pathPrefix="/artist"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:scheme="https"
+                    android:host="ssl.what.cd"
+                    android:pathPrefix="/artist"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="me.passtheheadphones.torrentgroup.TorrentGroupActivity"
+            android:label="@string/torrent_group">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:scheme="http"
+                    android:host="what.cd"
+                    android:pathPrefix="/torrents"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:scheme="https"
+                    android:host="what.cd"
+                    android:pathPrefix="/torrents"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:scheme="https"
+                    android:host="ssl.what.cd"
+                    android:pathPrefix="/torrents"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="me.passtheheadphones.search.SearchActivity"
+            android:label="@string/search">
+        </activity>
+        <activity
+            android:name="me.passtheheadphones.settings.SettingsActivity"
+            android:label="@string/action_settings">
+        </activity>
+        <activity
+            android:name="me.passtheheadphones.request.RequestActivity"
+            android:label="@string/request">
+        </activity>
+        <activity
+            android:name="me.passtheheadphones.barcode.BarcodeActivity"
+            android:label="@string/barcode_lookup">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/csv"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="me.passtheheadphones.bookmarks.BookmarksActivity"
+            android:label="@string/bookmarks"/>
+        <activity
+            android:name="me.passtheheadphones.notifications.NotificationsActivity"
+            android:label="@string/notifications"/>
+        <activity
+            android:name="me.passtheheadphones.forums.ForumActivity"
+            android:label="@string/forums">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:scheme="http"
+                    android:host="what.cd"
+                    android:pathPrefix="/forums"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:scheme="https"
+                    android:host="what.cd"
+                    android:pathPrefix="/forums"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:scheme="https"
+                    android:host="ssl.what.cd"
+                    android:pathPrefix="/forums"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="me.passtheheadphones.subscriptions.SubscriptionsActivity"
+            android:label="@string/subscriptions"/>
+        <activity
+            android:name="me.passtheheadphones.inbox.InboxActivity"
+            android:label="@string/inbox"/>
+        <activity
+            android:name="me.passtheheadphones.top10.Top10Activity"
+            android:label="@string/top10"/>
+        <activity
+            android:name="me.passtheheadphones.updates.UpdatesActivity"
+            android:label="@string/updates"/>
+        <service
+            android:name="me.passtheheadphones.errors.ErrorReporterService"
+            android:exported="false"/>
+        <service
+            android:name="me.passtheheadphones.updater.UpdateService"
+            android:exported="false"/>
+
+        <receiver
+            android:name="me.passtheheadphones.updater.UpdateBroadcastReceiver"
+            android:exported="false"/>
+        <receiver
+            android:name="me.passtheheadphones.torrentgroup.DownloadCompleteReceiver"
+            android:exported="false"/>
+
+        <meta-data android:name="me.passtheheadphones.glide.GlideConfiguration" android:value="GlideModule"/>
+
+    </application>
+
+</manifest>

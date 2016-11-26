@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".WhatAndroid">
+
+    <item
+            android:id="@+id/action_refresh"
+            android:icon="@drawable/ic_refresh_24dp"
+            android:title="@string/refresh"
+            android:orderInCategory="10"
+            app:showAsAction="always"/>
+
+    <!-- We don't show the send message item until we've loaded the user -->
+    <item
+            android:id="@+id/action_message"
+            android:icon="@drawable/ic_mail_24dp"
+            android:title="@string/send_message"
+            android:orderInCategory="20"
+            app:showAsAction="ifRoom"
+            android:visible="false"/>
+
+</menu>

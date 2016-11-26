@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="16dp">
+
+    <TextView
+            android:id="@+id/announcement_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:id="@+id/announcement_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <!-- The ellipses shows up but it seems that the text continues after it! -->
+    <TextView
+            android:id="@+id/announcement_snippet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="4"
+            android:ellipsize="end"/>
+
+</LinearLayout>

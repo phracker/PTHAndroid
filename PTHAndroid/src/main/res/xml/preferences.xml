@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="pref_general"
+        android:title="@string/preferences">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/key_pref_img_wifi"
+            android:title="@string/pref_img_on_wifi_only"/>
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/key_pref_disable_updater"
+            android:summary="@string/pref_updater_description"
+            android:title="@string/pref_disable_updater"/>
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/key_pref_light_layout"
+            android:title="@string/pref_light_layout"/>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/key_pref_light_theme"
+            android:title="@string/pref_light_theme"/>
+
+        <ListPreference
+            android:entries="@array/top_torrent_options"
+            android:entryValues="@array/top_torrent_options"
+            android:key="@string/pref_top_torrents"
+            android:title="@string/top_torrents_label"/>
+
+        <Preference
+            android:defaultValue=""
+            android:key="@string/key_pref_torrent_download_path"
+            android:summary="@string/pref_torrent_download_path_summary"
+            android:title="@string/pref_torrent_download_path"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_pywhat"
+        android:title="@string/pref_pywhat">
+        <EditTextPreference
+            android:defaultValue=""
+            android:inputType="textUri"
+            android:key="@string/key_pref_pywhat_host"
+            android:summary="Begins with http:// or https://"
+            android:title="@string/pref_pywhat_host"/>
+        <EditTextPreference
+            android:defaultValue=""
+            android:inputType="number"
+            android:key="@string/key_pref_pywhat_port"
+            android:title="@string/pref_pywhat_port"/>
+        <EditTextPreference
+            android:defaultValue=""
+            android:inputType="textPassword"
+            android:key="@string/key_pref_pywhat_password"
+            android:title="@string/pref_pywhat_password"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_version"
+        android:title="WhatAndroid Version">
+        <Preference
+            android:defaultValue=""
+            android:key="@string/key_pref_version_name"
+            android:title="@string/app_version_unknown"/>
+    </PreferenceCategory>
+</PreferenceScreen>

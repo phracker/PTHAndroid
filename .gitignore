@@ -1,0 +1,12 @@
+*.iml
+.gradle
+.idea
+!.idea/codeStyleSettings.xml
+build/
+gradle
+gradlew
+gradlew.bat
+local.properties
+*.swp
+WhatAndroid/libs/*.jar
+
