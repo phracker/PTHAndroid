@@ -1,11 +1,16 @@
 package me.passtheheadphones;
 
 import android.app.Application;
+import android.app.job.JobInfo;
+import android.app.job.JobScheduler;
+import android.content.ComponentName;
 import android.content.Context;
+import android.os.Build;
 import android.support.v7.app.AppCompatDelegate;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.GlideDrawable;
@@ -14,6 +19,7 @@ import com.bumptech.glide.request.target.Target;
 
 import api.soup.MySoup;
 import me.passtheheadphones.imgloader.ImageLoadFailTracker;
+import me.passtheheadphones.polling.JobSchedulerService;
 import me.passtheheadphones.settings.SettingsActivity;
 
 /**
@@ -38,6 +44,22 @@ public class PTHApplication extends Application {
 		} else {
 			AppCompatDelegate.setDefaultNightMode(
 					AppCompatDelegate.MODE_NIGHT_YES);
+		}
+
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+			ComponentName serviceName = new ComponentName(this, JobSchedulerService.class);
+			JobInfo jobInfo = new JobInfo.Builder(0, serviceName)
+					.setRequiredNetworkType(JobInfo.NETWORK_TYPE_UNMETERED)
+					.setRequiresDeviceIdle(true)
+					.setRequiresCharging(true)
+					.build();
+
+			JobScheduler scheduler = (JobScheduler) this.getSystemService(Context.JOB_SCHEDULER_SERVICE);
+//			int result = scheduler.schedule(jobInfo);
+			int result = 0;
+			if (result == JobScheduler.RESULT_SUCCESS) {
+				Toast.makeText(this, "YAY", Toast.LENGTH_LONG).show();
+			}
 		}
 	}
 

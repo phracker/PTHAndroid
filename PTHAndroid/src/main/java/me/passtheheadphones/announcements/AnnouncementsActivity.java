@@ -110,6 +110,7 @@ public class AnnouncementsActivity extends LoggedInActivity {
 		}
 	}
 
+
 	/**
 	 * Async task to load the announcements
 	 */

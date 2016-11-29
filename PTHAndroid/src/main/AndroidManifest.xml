@@ -193,7 +193,10 @@
             android:exported="false"/>
 
         <meta-data android:name="me.passtheheadphones.glide.GlideConfiguration" android:value="GlideModule"/>
-
+        <service
+            android:name=".polling.JobSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true"/>
     </application>
 
 </manifest>
