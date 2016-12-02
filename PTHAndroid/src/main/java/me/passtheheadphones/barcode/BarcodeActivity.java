@@ -43,7 +43,7 @@ import me.passtheheadphones.top10.Top10Activity;
  * and launching searches with the terms
  */
 public class BarcodeActivity extends AppCompatActivity implements NavigationDrawerFragment.NavigationDrawerCallbacks,
-	ScannerDialog.ScannerDialogListener, ViewSearchCallbacks {
+		ScannerDialog.ScannerDialogListener, ViewSearchCallbacks {
 
 	private NavigationDrawerFragment navDrawer;
 	private CharSequence title;
@@ -60,7 +60,7 @@ public class BarcodeActivity extends AppCompatActivity implements NavigationDraw
 		if (savedInstanceState == null){
 			fragment = new BarcodeFragment();
 			getSupportFragmentManager().beginTransaction()
-				.add(R.id.container, fragment).commit();
+					.add(R.id.container, fragment).commit();
 		}
 		else {
 			fragment = (BarcodeFragment)getSupportFragmentManager().findFragmentById(R.id.container);
@@ -68,7 +68,7 @@ public class BarcodeActivity extends AppCompatActivity implements NavigationDraw
 
 		//Setup our Semantics3 fallback API info
 		ProductSearch.setCredentials("",
-			"", false);
+				"", false);
 	}
 
 	public void restoreActionBar(){
@@ -104,8 +104,8 @@ public class BarcodeActivity extends AppCompatActivity implements NavigationDraw
 				startActivity(intent);
 				return true;
 			case R.id.action_feedback:
-				intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "whatcdandroid@gmail.com", null));
-				intent.putExtra(Intent.EXTRA_SUBJECT, "WhatAndroid Feedback");
+				intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "pthcrashes@gmail.com", null));
+				intent.putExtra(Intent.EXTRA_SUBJECT, "PTHAndroid Feedback");
 				startActivity(Intent.createChooser(intent, "Send email"));
 				return true;
 			default:
@@ -155,16 +155,16 @@ public class BarcodeActivity extends AppCompatActivity implements NavigationDraw
 	private void noScannerAlert(){
 		AlertDialog.Builder builder = new AlertDialog.Builder(this);
 		builder.setTitle("ZXing Barcode Scanner Not Found")
-			.setMessage("The ZXing Barcode scanner is required to use the scanning features, would you like to install it?")
-			.setPositiveButton("Install", new DialogInterface.OnClickListener() {
-				@Override
-				public void onClick(DialogInterface dialog, int which){
-					Intent intent = new Intent(Intent.ACTION_VIEW);
-					intent.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.google.zxing.client.android"));
-					startActivity(intent);
-				}
-			})
-			.setNegativeButton("Not now", null);
+				.setMessage("The ZXing Barcode scanner is required to use the scanning features, would you like to install it?")
+				.setPositiveButton("Install", new DialogInterface.OnClickListener() {
+					@Override
+					public void onClick(DialogInterface dialog, int which){
+						Intent intent = new Intent(Intent.ACTION_VIEW);
+						intent.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.google.zxing.client.android"));
+						startActivity(intent);
+					}
+				})
+				.setNegativeButton("Not now", null);
 		builder.create().show();
 	}
 
@@ -273,10 +273,10 @@ public class BarcodeActivity extends AppCompatActivity implements NavigationDraw
 			}
 			SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(BarcodeActivity.this);
 			preferences.edit()
-				.remove(SettingsFragment.USER_COOKIE)
-				.remove(SettingsFragment.USER_NAME)
-				.remove(SettingsFragment.USER_PASSWORD)
-				.apply();
+					.remove(SettingsFragment.USER_COOKIE)
+					.remove(SettingsFragment.USER_NAME)
+					.remove(SettingsFragment.USER_PASSWORD)
+					.apply();
 
 			Intent intent = new Intent(Intent.ACTION_MAIN);
 			intent.addCategory(Intent.CATEGORY_HOME);

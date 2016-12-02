@@ -58,8 +58,8 @@ public class LoginActivity extends Activity implements View.OnClickListener, Tex
 		loginRequest = getIntent().getBooleanExtra(LOGIN_REQUEST, false);
 		//Remove the saved user password from the settings, it's not secure
 		preferences.edit()
-			.remove(SettingsFragment.USER_PASSWORD)
-			.apply();
+				.remove(SettingsFragment.USER_PASSWORD)
+				.apply();
 	}
 
 	@Override
@@ -88,9 +88,9 @@ public class LoginActivity extends Activity implements View.OnClickListener, Tex
 			String savedUserName = preferences.getString(SettingsFragment.USER_NAME, "");
 			if (!username.getText().toString().equalsIgnoreCase(savedUserName)){
 				preferences.edit()
-					.remove(SettingsFragment.USER_NAME)
-					.remove(SettingsFragment.USER_COOKIE)
-					.apply();
+						.remove(SettingsFragment.USER_NAME)
+						.remove(SettingsFragment.USER_COOKIE)
+						.apply();
 			}
 			loginTask = new Login();
 			loginTask.execute(username.getText().toString(), password.getText().toString());
@@ -110,9 +110,9 @@ public class LoginActivity extends Activity implements View.OnClickListener, Tex
 				String savedUserName = preferences.getString(SettingsFragment.USER_NAME, "");
 				if (!username.getText().toString().equalsIgnoreCase(savedUserName)){
 					preferences.edit()
-						.remove(SettingsFragment.USER_NAME)
-						.remove(SettingsFragment.USER_COOKIE)
-						.apply();
+							.remove(SettingsFragment.USER_NAME)
+							.remove(SettingsFragment.USER_COOKIE)
+							.apply();
 				}
 				loginTask = new Login();
 				loginTask.execute(username.getText().toString(), password.getText().toString());
@@ -144,7 +144,7 @@ public class LoginActivity extends Activity implements View.OnClickListener, Tex
 				startActivity(intent);
 				return true;
 			case R.id.action_feedback:
-				intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "whatcdandroid@gmail.com", null));
+				intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "pthcrashes@gmail.com", null));
 				intent.putExtra(Intent.EXTRA_SUBJECT, "WhatAndroid Feedback");
 				startActivity(Intent.createChooser(intent, "Send email"));
 				return true;

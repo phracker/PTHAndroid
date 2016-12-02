@@ -40,13 +40,13 @@ public class ErrorReporterService extends IntentService {
 			Bitmap largeIcon = BitmapFactory.decodeResource(getResources(), R.drawable.ic_launcher);
 			NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
 			builder.setSmallIcon(R.drawable.ic_notify_crash_reports)
-				.setLargeIcon(largeIcon)
-				.setContentTitle("Crash Reports Found")
-				.setContentText("Click to send reports to the devs")
-				.setAutoCancel(true);
+					.setLargeIcon(largeIcon)
+					.setContentTitle("Crash Reports Found")
+					.setContentText("Click to send reports to the devs")
+					.setAutoCancel(true);
 
-			Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "whatcdandroid@gmail.com", null));
-			emailIntent.putExtra(Intent.EXTRA_SUBJECT, "WhatAndroid Crash Report");
+			Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "pthcrashes@gmail.com", null));
+			emailIntent.putExtra(Intent.EXTRA_SUBJECT, "PTHAndroid Crash Report");
 			emailIntent.putExtra(Intent.EXTRA_TEXT, reports.toString());
 			emailIntent = Intent.createChooser(emailIntent, "Send crash reports");
 			PendingIntent pendingIntent = PendingIntent.getActivity(this, 1, emailIntent, PendingIntent.FLAG_UPDATE_CURRENT);
@@ -77,7 +77,7 @@ public class ErrorReporterService extends IntentService {
 			for (File f : getFilesDir().listFiles(filter)){
 				BufferedReader reader = new BufferedReader(new FileReader(f));
 				reports.append(IOUtils.toString(reader))
-					.append("\n\n");
+						.append("\n\n");
 				//Clean up error reports
 				if (!f.delete()){
 					System.err.println("Failed to delete file: " + f.getName());

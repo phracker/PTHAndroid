@@ -38,7 +38,7 @@ import me.passtheheadphones.views.ImageDialog;
  * cookie is found will kick them to the login activity.
  */
 public abstract class LoggedInActivity extends AppCompatActivity implements NavigationDrawerFragment.NavigationDrawerCallbacks,
-	SetTitleCallback, OnLoggedInCallback, ShowHiddenTagListener {
+		SetTitleCallback, OnLoggedInCallback, ShowHiddenTagListener {
 
 	protected NavigationDrawerFragment navDrawer;
 	/**
@@ -75,7 +75,7 @@ public abstract class LoggedInActivity extends AppCompatActivity implements Navi
 				pending = PendingIntent.getBroadcast(context, 2, updater, 0);
 				AlarmManager alarmMgr = (AlarmManager) context.getSystemService(ALARM_SERVICE);
 				alarmMgr.setInexactRepeating(AlarmManager.ELAPSED_REALTIME, AlarmManager.INTERVAL_DAY,
-					AlarmManager.INTERVAL_DAY, pending);
+						AlarmManager.INTERVAL_DAY, pending);
 			}
 		}
 		//If the periodic checker is disabled we do still want to autocheck occasionally
@@ -194,8 +194,8 @@ public abstract class LoggedInActivity extends AppCompatActivity implements Navi
 				logoutTask.execute();
 				return true;
 			case R.id.action_feedback:
-				intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "whatcdandroid@gmail.com", null));
-				intent.putExtra(Intent.EXTRA_SUBJECT, "WhatAndroid Feedback");
+				intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "pthcrashes@gmail.com", null));
+				intent.putExtra(Intent.EXTRA_SUBJECT, "PTHAndroid Feedback");
 				startActivity(Intent.createChooser(intent, "Send email"));
 				return true;
 			default:
@@ -272,10 +272,10 @@ public abstract class LoggedInActivity extends AppCompatActivity implements Navi
 			}
 			SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(LoggedInActivity.this);
 			preferences.edit()
-				.remove(SettingsFragment.USER_COOKIE)
-				.remove(SettingsFragment.USER_NAME)
-				.remove(SettingsFragment.USER_PASSWORD)
-				.apply();
+					.remove(SettingsFragment.USER_COOKIE)
+					.remove(SettingsFragment.USER_NAME)
+					.remove(SettingsFragment.USER_PASSWORD)
+					.apply();
 
 			Intent intent = new Intent(Intent.ACTION_MAIN);
 			intent.addCategory(Intent.CATEGORY_HOME);
