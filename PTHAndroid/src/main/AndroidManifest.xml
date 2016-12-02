@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="me.passtheheadphones"
-          android:versionName="2.1.7.b">
+          package="me.passtheheadphones">
 
-<uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
@@ -34,7 +33,7 @@
                 <category android:name="android.intent.category.DEFAULT"/>
                 <data
                     android:scheme="http"
-                    android:host="what.cd"
+                    android:host="passtheheadphones.me"
                     android:pathPrefix="/user"/>
             </intent-filter>
             <intent-filter>
@@ -42,15 +41,7 @@
                 <category android:name="android.intent.category.DEFAULT"/>
                 <data
                     android:scheme="https"
-                    android:host="what.cd"
-                    android:pathPrefix="/user"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <data
-                    android:scheme="https"
-                    android:host="ssl.what.cd"
+                    android:host="passtheheadphones.me"
                     android:pathPrefix="/user"/>
             </intent-filter>
         </activity>
@@ -63,7 +54,7 @@
                 <category android:name="android.intent.category.DEFAULT"/>
                 <data
                     android:scheme="http"
-                    android:host="what.cd"
+                    android:host="passtheheadphones.me"
                     android:pathPrefix="/artist"/>
             </intent-filter>
             <intent-filter>
@@ -71,15 +62,7 @@
                 <category android:name="android.intent.category.DEFAULT"/>
                 <data
                     android:scheme="https"
-                    android:host="what.cd"
-                    android:pathPrefix="/artist"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <data
-                    android:scheme="https"
-                    android:host="ssl.what.cd"
+                    android:host="passtheheadphones.me"
                     android:pathPrefix="/artist"/>
             </intent-filter>
         </activity>
@@ -91,7 +74,7 @@
                 <category android:name="android.intent.category.DEFAULT"/>
                 <data
                     android:scheme="http"
-                    android:host="what.cd"
+                    android:host="passtheheadphones.me"
                     android:pathPrefix="/torrents"/>
             </intent-filter>
             <intent-filter>
@@ -99,15 +82,7 @@
                 <category android:name="android.intent.category.DEFAULT"/>
                 <data
                     android:scheme="https"
-                    android:host="what.cd"
-                    android:pathPrefix="/torrents"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <data
-                    android:scheme="https"
-                    android:host="ssl.what.cd"
+                    android:host="passtheheadphones.me"
                     android:pathPrefix="/torrents"/>
             </intent-filter>
         </activity>
@@ -146,7 +121,7 @@
                 <category android:name="android.intent.category.DEFAULT"/>
                 <data
                     android:scheme="http"
-                    android:host="what.cd"
+                    android:host="passtheheadphones.me"
                     android:pathPrefix="/forums"/>
             </intent-filter>
             <intent-filter>
@@ -154,15 +129,7 @@
                 <category android:name="android.intent.category.DEFAULT"/>
                 <data
                     android:scheme="https"
-                    android:host="what.cd"
-                    android:pathPrefix="/forums"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <data
-                    android:scheme="https"
-                    android:host="ssl.what.cd"
+                    android:host="passtheheadphones.me"
                     android:pathPrefix="/forums"/>
             </intent-filter>
         </activity>
@@ -175,6 +142,9 @@
         <activity
             android:name="me.passtheheadphones.top10.Top10Activity"
             android:label="@string/top10"/>
+        <activity
+            android:name="me.passtheheadphones.updates.UpdatesActivity"
+            android:label="@string/updates"/>
         <service
             android:name="me.passtheheadphones.errors.ErrorReporterService"
             android:exported="false"/>
