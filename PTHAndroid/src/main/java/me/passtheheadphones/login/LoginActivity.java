@@ -145,7 +145,7 @@ public class LoginActivity extends Activity implements View.OnClickListener, Tex
 				return true;
 			case R.id.action_feedback:
 				intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "pthcrashes@gmail.com", null));
-				intent.putExtra(Intent.EXTRA_SUBJECT, "WhatAndroid Feedback");
+				intent.putExtra(Intent.EXTRA_SUBJECT, "PTHAndroid Feedback");
 				startActivity(Intent.createChooser(intent, "Send email"));
 				return true;
 			default:
