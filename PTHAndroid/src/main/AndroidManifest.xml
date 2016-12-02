@@ -175,9 +175,6 @@
         <activity
             android:name="me.passtheheadphones.top10.Top10Activity"
             android:label="@string/top10"/>
-        <activity
-            android:name="me.passtheheadphones.updates.UpdatesActivity"
-            android:label="@string/updates"/>
         <service
             android:name="me.passtheheadphones.errors.ErrorReporterService"
             android:exported="false"/>
