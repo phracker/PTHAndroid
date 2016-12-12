@@ -73,7 +73,7 @@ public class ForumActivity extends LoggedInActivity implements ViewUserCallbacks
 			Intent intent = getIntent();
 			String tag = null;
 			//If we're coming from some link to the forums parse it and return the corresponding fragment
-			if (intent.getScheme() != null && intent.getDataString() != null && intent.getDataString().contains("what.cd")){
+			if (intent.getScheme() != null && intent.getDataString() != null && intent.getDataString().contains("passtheheadphones.me")){
 				f = parseLink(intent.getDataString());
 			}
 			//Jumping to a post in some thread

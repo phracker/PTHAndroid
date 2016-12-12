@@ -89,7 +89,7 @@ public class TorrentGroupActivity extends LoggedInActivity
 			getSupportLoaderManager().initLoader(0, args, this);
 		} else {
 			//If we're opening a group url parse out the group id
-			if (intent.getScheme() != null && intent.getDataString() != null && intent.getDataString().contains("what.cd")) {
+			if (intent.getScheme() != null && intent.getDataString() != null && intent.getDataString().contains("passtheheadphones.me")) {
 				Matcher m = torrentIdPattern.matcher(intent.getDataString());
 				if (m.find()) {
 					torrentId = Integer.parseInt(m.group(1));

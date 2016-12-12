@@ -17,7 +17,7 @@ public class UserTagStyle implements TagStyle {
     public Spannable getStyle(CharSequence param, CharSequence text) {
         SpannableString styled = new SpannableString(text);
         try {
-            styled.setSpan(new URLSpan("https://what.cd/user.php?action=search&search=" +
+            styled.setSpan(new URLSpan("https://passtheheadphones.me/user.php?action=search&search=" +
                     URLEncoder.encode(text.toString(), "UTF-8")), 0, styled.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();

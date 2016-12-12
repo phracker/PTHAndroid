@@ -62,7 +62,7 @@ public class ArtistActivity extends LoggedInActivity implements ViewTorrentCallb
 			String name = intent.getStringExtra(ARTIST_NAME);
 			boolean useSearch = intent.getBooleanExtra(USE_SEARCH, false);
 			//If we're opening an artist url parse out the artist we're trying to view
-			if (intent.getScheme() != null && intent.getData() != null && intent.getData().toString().contains("what.cd")){
+			if (intent.getScheme() != null && intent.getData() != null && intent.getData().toString().contains("passtheheadphones.me")){
 				String uri = intent.getData().toString();
 				Matcher m = artistName.matcher(uri);
 				if (m.find()){
