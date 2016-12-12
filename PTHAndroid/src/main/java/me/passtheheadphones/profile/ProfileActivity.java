@@ -56,7 +56,7 @@ public class ProfileActivity extends LoggedInActivity implements ViewTorrentCall
 		}
 		else {
 			String terms = null;
-			if (intent.getScheme() != null && intent.getDataString() != null && intent.getDataString().contains("what.cd")){
+			if (intent.getScheme() != null && intent.getDataString() != null && intent.getDataString().contains("passtheheadphones.me")){
 				Matcher m = userIdPattern.matcher(intent.getDataString());
 				if (m.find()){
 					id = Integer.parseInt(m.group(1));

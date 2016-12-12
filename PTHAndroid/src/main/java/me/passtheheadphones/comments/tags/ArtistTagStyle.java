@@ -16,7 +16,7 @@ public class ArtistTagStyle implements TagStyle {
     public Spannable getStyle(CharSequence param, CharSequence text) {
         SpannableString styled = new SpannableString(text);
         try {
-            styled.setSpan(new URLSpan("https://what.cd/artist.php?artistname=" +
+            styled.setSpan(new URLSpan("https://passtheheadphones.me/artist.php?artistname=" +
                             URLEncoder.encode(text.toString(), "UTF-8")), 0,
                     styled.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         } catch (UnsupportedEncodingException e) {

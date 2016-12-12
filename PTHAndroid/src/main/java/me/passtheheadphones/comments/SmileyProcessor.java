@@ -74,7 +74,7 @@ public class SmileyProcessor {
 		emojisHtml.put("&#x1f61e;", Pattern.compile("(<img [^>]*src=\"[^\"]+smileys/(frown|no).gif\"[^>]*>)"));
 		emojisHtml.put("&#x2764;", Pattern.compile("(<img [^>]*src=\"[^\"]+smileys/heart.gif\"[^>]*>)"));
 		emojisHtml.put("&#x1f614;", Pattern.compile("(<img [^>]*src=\"[^\"]+smileys/hmm.gif\"[^>]*>)"));
-		emojisHtml.put("&#x2764; What.CD", Pattern.compile("(<img [^>]*src=\"[^\"]+smileys/ilu.gif\"[^>]*>)"));
+		emojisHtml.put("&#x2764; passtheheadphones.me", Pattern.compile("(<img [^>]*src=\"[^\"]+smileys/ilu.gif\"[^>]*>)"));
 		emojisHtml.put("&#x1f606;", Pattern.compile("(<img [^>]*src=\"[^\"]+smileys/laughing.gif\"[^>]*>)"));
 		emojisHtml.put("&#x2764; FLAC", Pattern.compile("(<img [^>]*src=\"[^\"]+smileys/loveflac.gif\"[^>]*>)"));
 		emojisHtml.put("&#x1f637;", Pattern.compile("(<img [^>]*src=\"[^\"]+smileys/ninja.gif\"[^>]*>)"));
@@ -108,7 +108,7 @@ public class SmileyProcessor {
 		emojisBB.put("<3", "\u2764\uFE0F");
 		emojisBB.put(":unsure:", "\uD83D\uDE1F");
 		emojisBB.put(":no:", "\uD83D\uDE1F");
-		emojisBB.put(":whatlove:", "\u2764\uFE0F What.CD");
+		emojisBB.put(":whatlove:", "\u2764\uFE0F passtheheadphones.me");
 		emojisBB.put(":lol:", "\uD83D\uDE06");
 		emojisBB.put(":loveflac:", "\u2764\uFE0F FLAC");
 		emojisBB.put(":flaclove:", "\u2764\uFE0F FLAC");

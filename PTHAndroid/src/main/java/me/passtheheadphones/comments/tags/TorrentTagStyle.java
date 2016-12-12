@@ -15,8 +15,8 @@ public class TorrentTagStyle implements TagStyle {
         SpannableString styled = new SpannableString(text);
         //The torrent tags can be the full url or just the group id
         String p = text.toString();
-        if (!p.contains("what.cd")) {
-            styled.setSpan(new URLSpan("https://what.cd/torrents.php?id=" + text), 0, styled.length(),
+        if (!p.contains("passtheheadphones.me")) {
+            styled.setSpan(new URLSpan("https://passtheheadphones.me/torrents.php?id=" + text), 0, styled.length(),
                     Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         } else {
             styled.setSpan(new URLSpan(p), 0, styled.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
