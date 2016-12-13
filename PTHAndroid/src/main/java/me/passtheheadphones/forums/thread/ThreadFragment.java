@@ -34,8 +34,8 @@ public class ThreadFragment extends Fragment implements OnLoggedInCallback,
 	LoadingListener<ForumThread>, AddQuoteCallback, NumberPickerDialog.NumberPickerListener,
 	ReplyDialogFragment.ReplyDialogListener {
 
-    private static final String THREAD_NAME = "what.whatandroid.forums.THREAD_NAME",
-	    PAGES = "what.whatandroid.forums.PAGES", LOCKED = "what.whatandroid.forums.LOCKED";
+    private static final String THREAD_NAME = "me.passtheheadphones.forums.THREAD_NAME",
+	    PAGES = "me.passtheheadphones.forums.PAGES", LOCKED = "me.passtheheadphones.forums.LOCKED";
 
 	private SetTitleCallback setTitle;
 	private ThreadPagerAdapter pagerAdapter;

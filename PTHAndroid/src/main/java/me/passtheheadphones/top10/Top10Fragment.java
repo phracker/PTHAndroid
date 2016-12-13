@@ -24,7 +24,7 @@ import me.passtheheadphones.callbacks.OnLoggedInCallback;
  * lists of the torrents for each category
  */
 public class Top10Fragment extends Fragment implements OnLoggedInCallback, LoaderManager.LoaderCallbacks<TopTorrents> {
-	private static final String VIEW_PAGER_STATE = "what.whatandroid.top10.top10fragment.VIEW_PAGER_STATE";
+	private static final String VIEW_PAGER_STATE = "me.passtheheadphones.top10.top10fragment.VIEW_PAGER_STATE";
 	/**
 	 * Adapter displaying the categories of the top 10 torrent lists
 	 */

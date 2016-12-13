@@ -62,7 +62,7 @@
 
     <PreferenceCategory
         android:key="pref_version"
-        android:title="WhatAndroid Version">
+        android:title="PTHAndroid Version">
         <Preference
             android:defaultValue=""
             android:key="@string/key_pref_version_name"

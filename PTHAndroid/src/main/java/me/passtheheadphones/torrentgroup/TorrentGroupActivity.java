@@ -50,8 +50,8 @@ public class TorrentGroupActivity extends LoggedInActivity
 	/**
 	 * Param to pass the torrent group id to be shown
 	 */
-	public static final String GROUP_ID = "what.whatandroid.GROUP_ID",
-			TORRENT_ID = "what.whatandroid.TORRENT_ID";
+	public static final String GROUP_ID = "me.passtheheadphones.GROUP_ID",
+			TORRENT_ID = "me.passtheheadphones.TORRENT_ID";
 	/**
 	 * For use in viewTorrent to indicate that the group of the torrent is the currently open one
 	 */

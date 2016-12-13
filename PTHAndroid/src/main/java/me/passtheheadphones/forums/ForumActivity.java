@@ -37,11 +37,11 @@ import me.passtheheadphones.top10.Top10Activity;
  */
 public class ForumActivity extends LoggedInActivity implements ViewUserCallbacks,
 	ViewForumCallbacks, PollDialog.PollDialogListener, AddQuoteCallback {
-	public static final String FORUM_ID = "what.whatandroid.forums.FORUM_ID",
-		THREAD_ID = "what.whatandroid.forums.THREAD_ID",
-		PAGE = "what.whatandroid.forums.PAGE",
-			POST_ID = "what.whatandroid.forums.POST_ID",
-			CATEGORY_TAG = "what.whatandroid.forums.categoriesfragment";
+	public static final String FORUM_ID = "me.passtheheadphones.forums.FORUM_ID",
+			THREAD_ID = "me.passtheheadphones.forums.THREAD_ID",
+			PAGE = "me.passtheheadphones.forums.PAGE",
+			POST_ID = "me.passtheheadphones.forums.POST_ID",
+			CATEGORY_TAG = "me.passtheheadphones.forums.categoriesfragment";
 	/**
 	 * Matchers to match against forum url links
 	 */

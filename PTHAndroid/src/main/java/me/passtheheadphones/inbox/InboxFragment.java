@@ -17,7 +17,7 @@ import me.passtheheadphones.callbacks.OnLoggedInCallback;
  */
 public class InboxFragment extends Fragment implements OnLoggedInCallback {
 
-	private static final String PAGES = "what.whatandroid.inboxfragment.PAGES";
+	private static final String PAGES = "me.passtheheadphones.inboxfragment.PAGES";
 
 	/**
 	 * The adapter to alert when we've logged in to the site

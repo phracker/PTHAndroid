@@ -25,7 +25,7 @@ import me.passtheheadphones.callbacks.OnLoggedInCallback;
  */
 public class SubscriptionsFragment extends Fragment implements OnLoggedInCallback,
 	LoaderManager.LoaderCallbacks<Subscriptions> {
-	public static final String SHOW_ALL = "what.whatandroid.subscriptions.SHOW_ALL";
+	public static final String SHOW_ALL = "me.passtheheadphones.subscriptions.SHOW_ALL";
 	/**
 	 * List adapter displaying the subscription information
 	 */

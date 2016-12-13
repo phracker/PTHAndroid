@@ -16,8 +16,8 @@ import me.passtheheadphones.comments.WhatBBParser;
  * Displays hidden text
  */
 public class HiddenTextDialog extends DialogFragment {
-	public static final String TITLE = "what.whatandroid.HIDDEN_TITLE",
-		TEXT = "what.whatandroid.HIDDEN_TEXT";
+	public static final String TITLE = "me.passtheheadphones.HIDDEN_TITLE",
+		TEXT = "me.passtheheadphones.HIDDEN_TEXT";
 
 	/**
 	 * Use this factor method to create a hidden text dialog with some title displaying the desired text

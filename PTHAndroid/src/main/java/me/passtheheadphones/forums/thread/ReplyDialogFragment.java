@@ -45,9 +45,9 @@ public class ReplyDialogFragment extends DialogFragment implements View.OnClickL
 		public void discard();
 	}
 
-	public static final String DRAFT = "what.whatandroid.replydialogfragment.DRAFT",
-		SUBJECT = "what.whatandroid.replydialogfragment.SUBJECT",
-		PREVIEWING = "what.whatandroid.replydialogfragment.PREVIEWING";
+	public static final String DRAFT = "me.passtheheadphones.replydialogfragment.DRAFT",
+		SUBJECT = "me.passtheheadphones.replydialogfragment.SUBJECT",
+		PREVIEWING = "me.passtheheadphones.replydialogfragment.PREVIEWING";
 
 	/**
 	 * The input box for the user to enter their post

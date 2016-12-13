@@ -30,7 +30,7 @@ import me.passtheheadphones.top10.Top10Activity;
 public class InboxActivity extends LoggedInActivity implements ViewConversationCallbacks,
 	ViewUserCallbacks, AddQuoteCallback, ConversationChangesPasser {
 
-	private static final String CHANGES = "what.whatandroid.inboxactivity.CHANGES";
+	private static final String CHANGES = "me.passtheheadphones.inboxactivity.CHANGES";
 
 	/**
 	 * Listener to alert when we've logged in

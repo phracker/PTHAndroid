@@ -26,7 +26,7 @@ import me.passtheheadphones.R;
 public class ErrorReporterService extends IntentService {
 
 	public ErrorReporterService(){
-		super("WhatAndroid-ErrorReporterService");
+		super("PTHAndroid-ErrorReporterService");
 	}
 
 	/**

@@ -34,7 +34,7 @@ public class RequestActivity extends LoggedInActivity
 	/**
 	 * Param to pass the request id to be shown
 	 */
-	public final static String REQUEST_ID = "what.whatandroid.REQUEST_ID";
+	public final static String REQUEST_ID = "me.passtheheadphones.REQUEST_ID";
 	private RequestFragment fragment;
 
 	@Override

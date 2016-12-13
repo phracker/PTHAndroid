@@ -25,7 +25,7 @@ import me.passtheheadphones.settings.SettingsActivity;
  */
 public class ForumListFragment extends Fragment implements OnLoggedInCallback, LoaderManager.LoaderCallbacks<Forum> {
 	//Used to save/restore our scroll position in the forum page view
-	private static final String SCROLL_STATE = "what.whatandroid.forumlistfragment.SCROLL_STATE";
+	private static final String SCROLL_STATE = "me.passtheheadphones.forumlistfragment.SCROLL_STATE";
 
 	private LoadingListener<Forum> listener;
 	private ProgressBar loadingIndicator;

@@ -27,8 +27,8 @@ import me.passtheheadphones.callbacks.OnLoggedInCallback;
  * some page of the user's inbox
  */
 public class InboxListFragment extends Fragment implements OnLoggedInCallback, LoaderManager.LoaderCallbacks<Inbox> {
-	public static final String PAGE = "what.whatandroid.inboxlistfragment.PAGE";
-	private static final String SCROLL_STATE = "what.whatandroid.inboxlistfragment.SCROLL_STATE";
+	public static final String PAGE = "me.passtheheadphones.inboxlistfragment.PAGE";
+	private static final String SCROLL_STATE = "me.passtheheadphones.inboxlistfragment.SCROLL_STATE";
 
 	/**
 	 * Listener to alert when we're finished loading this page

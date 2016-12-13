@@ -32,8 +32,8 @@ public class ManageConversationDialog extends DialogFragment {
 		public void manageConversation(int convId, boolean sticky, boolean unread, boolean delete);
 	}
 
-	private final static String STICKY = "what.whatandroid.conversation.STICKY",
-		UNREAD = "what.whatandroid.conversation.UNREAD";
+	private final static String STICKY = "me.passtheheadphones.conversation.STICKY",
+		UNREAD = "me.passtheheadphones.conversation.UNREAD";
 
 	private Listener listener;
 

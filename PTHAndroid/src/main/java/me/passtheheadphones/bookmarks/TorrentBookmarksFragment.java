@@ -21,7 +21,7 @@ import me.passtheheadphones.callbacks.OnLoggedInCallback;
  */
 public class TorrentBookmarksFragment extends Fragment implements OnLoggedInCallback, LoaderManager.LoaderCallbacks<Bookmarks>,
 	BookmarksChangedListener {
-	public static final String BOOKMARKS_CHANGED = "what.whatandroid.BOOKMARKS_CHANGED";
+	public static final String BOOKMARKS_CHANGED = "me.passtheheadphones.BOOKMARKS_CHANGED";
 	private boolean reloadBookmarks;
 	private TorrentBookmarkAdapter adapter;
 	private Bookmarks bookmarks;

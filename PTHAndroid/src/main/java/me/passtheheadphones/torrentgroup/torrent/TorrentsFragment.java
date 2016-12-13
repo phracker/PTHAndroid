@@ -29,7 +29,7 @@ import me.passtheheadphones.torrentgroup.TorrentGroupActivity;
  * Fragment that contains the swipe view of the torrents
  */
 public class TorrentsFragment extends Fragment implements LoadingListener<TorrentGroup> {
-	private static final String TORRENT_IDX = "what.whatandroid.TORRENT_IDX";
+	private static final String TORRENT_IDX = "me.passtheheadphones.TORRENT_IDX";
 	private SetTitleCallback setTitle;
 	private TorrentPagerAdapter pagerAdapter;
 	private ViewPager viewPager;

@@ -23,7 +23,7 @@ import me.passtheheadphones.forums.ForumActivity;
  * view the results of
  */
 public class PollDialog extends DialogFragment implements AdapterView.OnItemClickListener {
-	public static final String POLL = "what.whatandroid.polldialog.POLL";
+	public static final String POLL = "me.passtheheadphones.polldialog.POLL";
 	/**
 	 * Listener to alert when we make a vote
 	 */

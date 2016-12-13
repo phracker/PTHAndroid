@@ -24,7 +24,7 @@ import me.passtheheadphones.comments.CommentsAdapter;
 public class RequestCommentsFragment extends Fragment implements LoadingListener<Request>,
 	LoaderManager.LoaderCallbacks<Request>, AbsListView.OnScrollListener {
 
-	public static final String COMMENTS_PAGE = "what.whatandroid.REQUEST_COMMENTS_PAGE";
+	public static final String COMMENTS_PAGE = "me.passtheheadphones.REQUEST_COMMENTS_PAGE";
 	private Request request;
 	private CommentsAdapter adapter;
 	private View footer;
