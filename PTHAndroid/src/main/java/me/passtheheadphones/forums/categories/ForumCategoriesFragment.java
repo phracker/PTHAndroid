@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.Loader;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +15,9 @@ import android.widget.Toast;
 
 import api.forum.categories.ForumCategories;
 import api.soup.MySoup;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.Unbinder;
 import me.passtheheadphones.R;
 import me.passtheheadphones.callbacks.OnLoggedInCallback;
 import me.passtheheadphones.callbacks.SetTitleCallback;
@@ -26,6 +30,10 @@ public class ForumCategoriesFragment extends Fragment implements OnLoggedInCallb
 	/**
 	 * List adapter displaying all the forum information
 	 */
+	@BindView(R.id.swipeContainer) SwipeRefreshLayout swipeContainer;
+
+	private Unbinder unbinder;
+
 	private ForumCategoriesListAdapter adapter;
 	private ProgressBar loadingIndicator;
 	private SetTitleCallback setTitle;
@@ -48,6 +56,7 @@ public class ForumCategoriesFragment extends Fragment implements OnLoggedInCallb
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
 		View view = inflater.inflate(R.layout.fragment_list_view, container, false);
 		ListView list = (ListView)view.findViewById(R.id.list);
+		unbinder = ButterKnife.bind(this, view);
 		loadingIndicator = (ProgressBar)view.findViewById(R.id.loading_indicator);
 		adapter = new ForumCategoriesListAdapter(getActivity());
 		list.setAdapter(adapter);
@@ -57,6 +66,22 @@ public class ForumCategoriesFragment extends Fragment implements OnLoggedInCallb
 		if (MySoup.isLoggedIn()){
 			onLoggedIn();
 		}
+
+		swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+			@Override
+			public void onRefresh() {
+				// Your code to refresh the list here.
+				// Make sure you call swipeContainer.setRefreshing(false)
+				// once the network request has completed successfully.
+				onLoggedIn();
+			}
+		});
+		// Configure the refreshing colors
+
+		swipeContainer.setColorSchemeResources(android.R.color.holo_blue_bright,
+			android.R.color.holo_green_light,
+			android.R.color.holo_orange_light,
+			android.R.color.holo_red_light);
 		return view;
 	}
 
@@ -88,9 +113,15 @@ public class ForumCategoriesFragment extends Fragment implements OnLoggedInCallb
 			adapter.addAll(data.getCategories());
 			adapter.notifyDataSetChanged();
 		}
+		swipeContainer.setRefreshing(false);
 	}
 
 	@Override
 	public void onLoaderReset(Loader<ForumCategories> loader){
+	}
+
+	@Override public void onDestroyView() {
+		super.onDestroyView();
+		unbinder.unbind();
 	}
 }
