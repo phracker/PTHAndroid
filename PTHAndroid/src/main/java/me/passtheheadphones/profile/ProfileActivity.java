@@ -37,7 +37,7 @@ public class ProfileActivity extends LoggedInActivity implements ViewTorrentCall
 	/**
 	 * Param to pass the user id to display to the activity
 	 */
-	public static final String USER_ID = "what.whatandroid.USER_ID";
+	public static final String USER_ID = "me.passtheheadphones.USER_ID";
 	private static final Pattern userIdPattern = Pattern.compile(".*id=(\\d+).*"),
 		userSearchPattern = Pattern.compile(".*search=([^&]+).*");
 	private ProfileFragment profileFragment;

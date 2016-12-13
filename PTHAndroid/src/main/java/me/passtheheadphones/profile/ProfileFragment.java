@@ -44,7 +44,7 @@ import me.passtheheadphones.settings.SettingsActivity;
 public class ProfileFragment extends Fragment implements OnLoggedInCallback,
         LoaderManager.LoaderCallbacks<UserProfile>, ReplyDialogFragment.ReplyDialogListener {
 
-    public static final String DEFER_LOADING = "what.whatandroid.DEFER_LOADING";
+    public static final String DEFER_LOADING = "me.passtheheadphones.DEFER_LOADING";
     /**
      * The user's profile information
      */

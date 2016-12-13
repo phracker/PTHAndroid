@@ -32,10 +32,10 @@ public class NumberPickerDialog extends DialogFragment {
         public void pickNumber(int number);
     }
 
-    public static final String MIN = "what.whatandroid.numberpickerdialog.MIN",
-            MAX = "what.whatandroid.numberpickerdialog.MAX",
-            TITLE = "what.whatandroid.numberpickerdialog.TITLE",
-            VALUE = "what.whatandroid.numberpickerdialog.VALUE";
+    public static final String MIN = "me.passtheheadphones.numberpickerdialog.MIN",
+            MAX = "me.passtheheadphones.numberpickerdialog.MAX",
+            TITLE = "me.passtheheadphones.numberpickerdialog.TITLE",
+            VALUE = "me.passtheheadphones.numberpickerdialog.VALUE";
 
     private NumberPickerListener listener;
 

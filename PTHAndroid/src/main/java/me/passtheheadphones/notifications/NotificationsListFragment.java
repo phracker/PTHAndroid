@@ -23,8 +23,8 @@ import me.passtheheadphones.callbacks.OnLoggedInCallback;
  * Displays some page of the users notifications
  */
 public class NotificationsListFragment extends Fragment implements OnLoggedInCallback, LoaderManager.LoaderCallbacks<Notifications> {
-	public static final String PAGE = "what.whatandroid.NOTIFICATIONS_PAGE",
-		SCROLL_STATE = "what.whatandroid.notificationslistfragment.SCROLL_STATE";
+	public static final String PAGE = "me.passtheheadphones.NOTIFICATIONS_PAGE",
+		SCROLL_STATE = "me.passtheheadphones.notificationslistfragment.SCROLL_STATE";
 	private ListView list;
 	private Parcelable scrollState;
 	private NotificationsListAdapter adapter;

@@ -30,7 +30,7 @@ public class LoginActivity extends Activity implements View.OnClickListener, Tex
 	 * Set this parameter to true in the intent if we just want the login activity to
 	 * log the user in then return back to the launching activity
 	 */
-	public static final String LOGIN_REQUEST = "what.whatandroid.LOGIN_REQUEST";
+	public static final String LOGIN_REQUEST = "me.passtheheadphones.LOGIN_REQUEST";
 	/**
 	 * If we're logging in at the request of some other activity
 	 */

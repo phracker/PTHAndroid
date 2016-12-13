@@ -28,8 +28,8 @@ import me.passtheheadphones.forums.NumberPickerDialog;
 public class ForumFragment extends Fragment implements OnLoggedInCallback, LoadingListener<Forum>,
 	NumberPickerDialog.NumberPickerListener {
 
-	private static final String FORUM_NAME = "what.whatandroid.forums.FORUM_NAME",
-		PAGES = "what.whatandroid.forums.PAGES";
+	private static final String FORUM_NAME = "me.passtheheadphones.forums.FORUM_NAME",
+		PAGES = "me.passtheheadphones.forums.PAGES";
 
 	private SetTitleCallback setTitle;
 	private ViewPager viewPager;

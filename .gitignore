@@ -8,5 +8,5 @@ gradlew
 gradlew.bat
 local.properties
 *.swp
-WhatAndroid/libs/*.jar
+PTHAndroid/libs/*.jar
 

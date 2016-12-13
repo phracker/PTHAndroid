@@ -25,7 +25,7 @@ import me.passtheheadphones.forums.ForumActivity;
  */
 public class ThreadListFragment extends Fragment implements OnLoggedInCallback, LoaderManager.LoaderCallbacks<ForumThread> {
 	//Used to save/restore the scroll position of the list view so we can return to the post we were viewing
-	private static final String SCROLL_STATE = "what.whatandroid.threadlistfragment.SCROLL_STATE";
+	private static final String SCROLL_STATE = "me.passtheheadphones.threadlistfragment.SCROLL_STATE";
 	private static final int LAST_POST = -2, NO_POST = -1;
 
 	private LoadingListener<ForumThread> listener;

@@ -26,7 +26,7 @@ import me.passtheheadphones.torrentgroup.TorrentGroupActivity;
 public class TorrentCommentsFragment extends Fragment
 		implements LoadingListener<TorrentGroup>, LoaderManager.LoaderCallbacks<TorrentComments>, AbsListView.OnScrollListener {
 
-	public static final String COMMENTS_PAGE = "what.whatandroid.TORRENT_COMMENTS_PAGE";
+	public static final String COMMENTS_PAGE = "me.passtheheadphones.TORRENT_COMMENTS_PAGE";
 	private TorrentComments comments;
 	private int groupId;
 	private CommentsAdapter adapter;

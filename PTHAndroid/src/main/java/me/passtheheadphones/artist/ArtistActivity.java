@@ -37,8 +37,8 @@ public class ArtistActivity extends LoggedInActivity implements ViewTorrentCallb
 	 * the USE_SEARCH parameter should be set to true and will indicate that the artist
 	 * to be viewed is coming from the ArtistSearchFragment
 	 */
-	public static final String ARTIST_ID = "what.whatandroid.ARTIST_ID", ARTIST_NAME = "what.whatandroid.ARTIST_NAME",
-		USE_SEARCH = "what.whatandroid.USE_SEARCH";
+	public static final String ARTIST_ID = "me.passtheheadphones.ARTIST_ID", ARTIST_NAME = "me.passtheheadphones.ARTIST_NAME",
+		USE_SEARCH = "me.passtheheadphones.USE_SEARCH";
 	/**
 	 * Patterns to match artist names and ids
 	 */

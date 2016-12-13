@@ -22,8 +22,8 @@ import java.util.List;
  */
 public class FolderPickerDialog extends DialogFragment
 		implements AdapterView.OnItemClickListener, View.OnClickListener {
-	private static String DIRECTORY = "what.whatandroid.folderpickerdialog.DIRECTORY",
-			FALLBACK_DIR = "what.whatandroid.folderpickerdialog.FALLBACK_DIR:";
+	private static String DIRECTORY = "me.passtheheadphones.folderpickerdialog.DIRECTORY",
+			FALLBACK_DIR = "me.passtheheadphones.folderpickerdialog.FALLBACK_DIR:";
 	/**
 	 * Adapter displaying the list of directories in the current directory
 	 */

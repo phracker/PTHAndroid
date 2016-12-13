@@ -42,7 +42,7 @@ public class VoteDialog extends DialogFragment implements TextWatcher, AdapterVi
 	 * Constants for size of megabyte and gigabyte in bytes and the minimum vote (20 MB)
 	 */
 	private static final long megaByte = 1048576, gigaByte = 1073741824, minVote = 20 * megaByte;
-	private static final String REQUEST_TAX = "what.whatandroid.REQUEST_TAX";
+	private static final String REQUEST_TAX = "me.passtheheadphones.REQUEST_TAX";
 	/**
 	 * Request we're deciding to vote on and its tax percentage
 	 */

@@ -16,7 +16,7 @@ import me.passtheheadphones.PTHApplication;
  * click on some album art
  */
 public class ImageDialog extends DialogFragment implements View.OnClickListener {
-	public static final String IMAGE_URL = "what.whatandroid.IMAGE_URL";
+	public static final String IMAGE_URL = "me.passtheheadphones.IMAGE_URL";
 	private String imageUrl;
 
 	/**

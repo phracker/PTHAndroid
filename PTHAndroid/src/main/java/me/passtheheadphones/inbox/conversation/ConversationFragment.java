@@ -35,8 +35,8 @@ public class ConversationFragment extends Fragment implements OnLoggedInCallback
 	AddQuoteCallback, LoaderManager.LoaderCallbacks<Conversation>, ReplyDialogFragment.ReplyDialogListener,
 	ManageConversationDialog.Listener {
 
-	public static final String CONVERSATION = "what.whatandroid.conversationfragment.CONVERSATION";
-	private static final String SCROLL_STATE = "what.whatandroid.conversationfragment.SCROLL_STATE";
+	public static final String CONVERSATION = "me.passtheheadphones.conversationfragment.CONVERSATION";
+	private static final String SCROLL_STATE = "me.passtheheadphones.conversationfragment.SCROLL_STATE";
 
 	private ProgressBar loadingIndicator;
 	/**

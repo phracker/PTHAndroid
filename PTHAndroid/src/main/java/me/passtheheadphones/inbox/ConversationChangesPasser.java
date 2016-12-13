@@ -10,10 +10,10 @@ import android.os.Bundle;
  * displaying the conversation updates its data
  */
 public interface ConversationChangesPasser {
-	public static final String CONVERSATION = "what.whatandroid.conversationchanges.CONVERSATION",
-		STICKY = "what.whatandroid.conversationchanges.STICKY",
-		UNREAD = "what.whatandroid.conversationchanges.UNREAD",
-		DELETED = "what.whatandroid.conversationchanges.DELETED";
+	public static final String CONVERSATION = "me.passtheheadphones.conversationchanges.CONVERSATION",
+		STICKY = "me.passtheheadphones.conversationchanges.STICKY",
+		UNREAD = "me.passtheheadphones.conversationchanges.UNREAD",
+		DELETED = "me.passtheheadphones.conversationchanges.DELETED";
 
 	/**
 	 * Set the conversation changes bundle containing

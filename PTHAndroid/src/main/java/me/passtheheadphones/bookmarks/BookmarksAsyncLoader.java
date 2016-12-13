@@ -12,7 +12,7 @@ public class BookmarksAsyncLoader extends AsyncTaskLoader<Bookmarks> {
 	/**
 	 * Params to send via bundle to tell us what type of bookmarks to load
 	 */
-	public static String BOOKMARK_TYPE = "what.whatandroid.BOOKMARK_TYPE";
+	public static String BOOKMARK_TYPE = "me.passtheheadphones.BOOKMARK_TYPE";
 	public static int TORRENTS = 0, ARTISTS = 1;
 	private Bookmarks bookmarks;
 	private int type;

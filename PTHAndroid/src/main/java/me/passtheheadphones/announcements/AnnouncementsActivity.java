@@ -23,7 +23,7 @@ public class AnnouncementsActivity extends LoggedInActivity {
 	/**
 	 * Intent parameters for showing Announcements or Blogs
 	 */
-	public final static String SHOW = "what.whatandroid.SHOW";
+	public final static String SHOW = "me.passtheheadphones.SHOW";
 	public final static int ANNOUNCEMENTS = 0, BLOGS = 1;
 	/**
 	 * Callback to update the displayed fragments list of blog posts or announcements

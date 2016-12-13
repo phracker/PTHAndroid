@@ -15,9 +15,9 @@ import me.passtheheadphones.R;
  * or to some pyWA server
  */
 public class DownloadDialog extends DialogFragment {
-	private static final String TORRENT_ID = "what.whatandroid.DOWNLOAD_TORRENT_ID",
-		DOWNLOAD_LINK = "what.whatandroid.DOWNLOAD_LINK", DOWNLOAD_TITLE = "what.whatandroid.DOWNLOAD_TITLE",
-		EDITION = "what.whatandroid.EDITION";
+	private static final String TORRENT_ID = "me.passtheheadphones.DOWNLOAD_TORRENT_ID",
+		DOWNLOAD_LINK = "me.passtheheadphones.DOWNLOAD_LINK", DOWNLOAD_TITLE = "me.passtheheadphones.DOWNLOAD_TITLE",
+		EDITION = "me.passtheheadphones.EDITION";
 
 	/**
 	 * Interface to get back information on the user's selection
