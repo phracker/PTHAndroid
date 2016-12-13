@@ -1,6 +1,6 @@
 PTHAndroid
 =
-An android app for PTH, includes everything you love about What as well as barcode scanning for quick music look ups.
+An android app for PTH, includes everything you love about the site as well as barcode scanning for quick music look ups.
 
 The app will work with a default setup of Gazelle, just change the url to point to your site and enjoy.
 
@@ -20,4 +20,6 @@ Dependencies
 -
 - [WhatAPI](https://github.com/Gwindow/WhatAPI) Grab the latest release from the repo.
 
+Thanks
+-
 This project is based on past work from GWindow, Twinklebear and Dr4g0n over [here](https://github.com/Gwindow/WhatAndroid). Thanks a lot to you all.
