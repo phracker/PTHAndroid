@@ -268,7 +268,7 @@ public class BarcodeActivity extends AppCompatActivity implements NavigationDraw
 		 */
 		@Override
 		protected void onPostExecute(Boolean status){
-			if (dialog.isShowing()){
+			if (dialog != null && dialog.isShowing()){
 				dialog.dismiss();
 			}
 			SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(BarcodeActivity.this);
@@ -294,12 +294,6 @@ public class BarcodeActivity extends AppCompatActivity implements NavigationDraw
 				e.printStackTrace();
 			}
 			return status;
-		}
-
-		public void dismissDialog(){
-			if (dialog.isShowing()){
-				dialog.dismiss();
-			}
 		}
 	}
 }
