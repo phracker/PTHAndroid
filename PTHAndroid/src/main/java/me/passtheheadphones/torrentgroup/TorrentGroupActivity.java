@@ -295,7 +295,7 @@ public class TorrentGroupActivity extends LoggedInActivity
 		@Override
 		protected Boolean doInBackground(String... params) {
 			String url = params[0] + ":" + params[1] + "/dl.pywa?pass=" + params[2]
-					+ "&site=whatcd&id=" + params[3];
+					+ "&site=passtheheadphones&id=" + params[3];
 			try {
 				String result = MySoup.scrapeOther(url);
 				if (result.contains("success")) {
